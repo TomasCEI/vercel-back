@@ -1,4 +1,5 @@
 import express from 'express';
+import Router from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -24,6 +25,12 @@ app.get("/", (req, res) => {
     res.send(landingHTML);
 })
 
+const router = Router();
+router.get('/', (req, res) => {
+    res.json({ message: 'Bienvenidos a mi API!' });
+});
+
+app.use('/api/v1', router);
 
 
 app.listen(3000, () => {
