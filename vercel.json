@@ -7,6 +7,7 @@
     "rewrites": [
         { "source": "/uploads/(.*)", "destination": "/public/uploads/$1" },
         { "source": "/web/(.*)", "destination": "/public/$1" },
+        { "source": "/web", "destination": "/public/index.html" },
         { "source": "/(.*)", "destination": "/index.js" }
     ] 
 }
