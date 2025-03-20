@@ -16,8 +16,10 @@ Agregar este archivo .JSON
 ## Tutorial oficial para deploy en vercel
 https://vercel.com/guides/using-express-with-vercel
 
+
+
 // Uso de CLI de VERCEL
-```js
+```bash
 npm i vercel -D
 ```
 
@@ -31,7 +33,17 @@ En Package.json
 }
 ```
 
+```js
+{ 
+    "version": 2, 
+    "rewrites": [{ "source": "/(.*)", "destination": "/api" }] 
+}
+```
 
 ## Uso de Express con Vite
 
 https://vercel.community/t/express-101-everything-about-deploying-your-express-app-on-vercel/4870
+
+- Instalación de express dentro de un VITE
+- Poner el script en una subcarpeta "/api"
+- Crear un archivo vercel.json
