@@ -2,13 +2,17 @@
   "name": "vercel-back",
   "module": "index.js",
   "type": "module",
-  "scripts":{
+  "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "vercel-login": "vercel login",
+    "vercel-dev": "vercel dev",
+    "build": "node index.js"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "vercel": "^41.4.1"
   },
   "dependencies": {
     "cors": "^2.8.5",
