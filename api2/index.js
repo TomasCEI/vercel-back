@@ -15,10 +15,7 @@ app.use(express.urlencoded({ extended: false })); // leer datos de urlEncoded de
 
 // Nos permite acceder a los archivos de nuestro backend
 app.use('/uploads', express.static('public/uploads'));
-
-// para usar esto mejor trabajar con VITE + Express
-// https://vercel.community/t/express-101-everything-about-deploying-your-express-app-on-vercel/4870
-//app.use('/web', express.static('public/web'));
+app.use('/web', express.static('public/web'));
 
 // Rutas
 app.get("/", (req, res) => {

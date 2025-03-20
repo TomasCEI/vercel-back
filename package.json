@@ -3,11 +3,12 @@
   "module": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js",
     "vercel-login": "vercel login",
     "vercel-dev": "vercel dev",
-    "build2": "node index.js"
+    "vercel-prod": "vercel --prod",
+    "build2": ""
   },
   "devDependencies": {
     "@types/bun": "latest",
