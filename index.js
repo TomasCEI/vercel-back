@@ -37,6 +37,10 @@ router.get('/', (req, res) => {
     res.json({ message: 'Bienvenidos a mi API!' });
 });
 
+router.get('/usuarios', (req, res) => {
+    res.json({ message: 'Ruta de usuarios!' });
+});
+
 app.use('/api/v1', router);
 
 
