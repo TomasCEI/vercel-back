@@ -5,6 +5,7 @@
         { "src": "public/**", "use": "@vercel/static" }
     ], 
     "rewrites": [
+        { "source": "/uploads/(.*)", "destination": "/public/uploads/$1" },
         { "source": "/(.*)", "destination": "/index.js" }
     ] 
 }
